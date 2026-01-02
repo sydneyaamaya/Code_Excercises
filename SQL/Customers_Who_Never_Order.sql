@@ -17,3 +17,8 @@ WHERE NOT EXISTS (
     WHERE Orders.customerID = Customers.ID
 )
 
+# Notes:
+
+# A cusomter who never orders anything will not have their name 
+# as a customerID under orders table 
+# SELECT name AS Customrs will rename name column as Customers in the output 
